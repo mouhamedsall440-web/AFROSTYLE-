@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> A propos</title>
+</head>
+
+<body>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #FEF3C7;
+            color: #1F2937;
+        }
+
+        header {
+            background: #111827;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+
+
+
+        .logo {
+            color: white;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #D97706;
+        }
+
+        .banner {
+            background: #92400E;
+            color: white;
+            text-align: center;
+            padding: 70px 20px;
+        }
+
+        .banner h1 {
+            font-size: 45px;
+            margin-bottom: 15px;
+        }
+
+        .banner p {
+            font-size: 18px;
+        }
+
+        section {
+            padding: 70px 8%;
+        }
+
+        .about-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            align-items: center;
+        }
+
+        .about-text h2 {
+            color: #92400E;
+            margin-bottom: 20px;
+            font-size: 35px;
+        }
+
+        .about-text p {
+            line-height: 1.9;
+            margin-bottom: 20px;
+            color: #6B7280;
+        }
+
+        .about-image img {
+            width: 100%;
+            border-radius: 20px;
+        }
+
+        .values {
+            margin-top: 60px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
+        }
+
+        .value-box {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .value-box h3 {
+            color: #065F46;
+            margin-bottom: 15px;
+        }
+
+        .value-box p {
+            color: #6B7280;
+            line-height: 1.7;
+        }
+
+        footer {
+            background: #111827;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin: 10px 0;
+        }
+
+        @media(max-width:768px) {
+
+            .banner h1 {
+                font-size: 32px;
+            }
+
+            nav {
+                margin-top: 15px;
+            }
+
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+
+        }
+    </style>
+
+    </head>
+
+    <body>
+
+        <!-- HEADER -->
+
+        <header>
+
+            <div class="logo">AFROSTYLE SHOP</div>
+
+            <nav>
+                <a href="index.html">Accueil</a>
+                <a href="collections.html">Collections</a>
+                <a href="produits.html">Produits</a>
+                <a href="À propos.html">À propos</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+
+        </header>
+
+        <!-- BANNIÈRE -->
+
+        <div class="banner">
+
+            <h1>À propos de nous</h1>
+
+            <p>
+                Découvrez l’histoire de AFROSTYLE SHOP.
+            </p>
+
+        </div>
+
+        <!-- À PROPOS -->
+
+        <section>
+
+            <div class=" À propos-container">
+
+                <div class=" À propos-text">
+
+                    <h2>Notre Histoire</h2>
+
+                    <p>
+                        AFROSTYLE SHOP valorise la mode africaine à travers
+                        des créations modernes, accessibles et élégantes.
+
+                    </p>
+
+                    <p>
+                        Notre boutique travaille avec des créateurs locaux
+                        passionnés afin d’offrir des vêtements uniques,
+                        inspirés des traditions africaines et des tendances modernes.
+                    </p>
+
+                </div>
+
+                <div class=" À propos-image">
+
+                    <img src="data:image/jpeg;base64,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"
+                        alt="AFROSTYLE SHOP">
+
+                </div>
+
+            </div>
+
+            <!-- VALEURS -->
+
+            <div class="values">
+
+                <div class="value-box">
+
+                    <h3>Inspiration Africaine</h3>
+
+                    <p>
+                        Des créations inspirées de la richesse culturelle africaine.
+                    </p>
+
+                </div>
+
+                <div class="value-box">
+
+                    <h3>Qualité des Tissus</h3>
+
+                    <p>
+                        Des matières confortables .
+                    </p>
+
+                </div>
+
+                <div class="value-box">
+
+                    <h3>Créateurs Locaux</h3>
+
+                    <p>
+                        Valorisation du savoir-faire des artisans africains.
+                    </p>
+
+                </div>
+
+                <div class="value-box">
+
+                    <h3>Élégance & Modernité</h3>
+
+                    <p>
+                        Un mélange parfait entre tradition et style moderne.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- FOOTER -->
+
+        <footer>
+
+            <p>© 2026 AFROSTYLE SHOP - Tous droits réservés.</p>
+
+            <p>Adresse : Dakar, Sénégal</p>
+
+            <p>Téléphone : +221 78 334 35 41</p>
+
+            <p>Facebook | Instagram | WhatsApp</p>
+
+        </footer>
+    </body>
+
+</html>

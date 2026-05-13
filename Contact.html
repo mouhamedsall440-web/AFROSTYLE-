@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+</head>
+
+<body>
+
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #FEF3C7;
+            color: #1F2937;
+        }
+
+        header {
+            background: #111827;
+            padding: 15px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 28px;
+            color: white;
+            font-family: 'Playfair Display', serif;
+            font-weight: bold;
+        }
+
+        .logo span {
+            color: #D97706;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 25px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #D97706;
+        }
+
+        section {
+            padding: 70px 8%;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .section-title h2 {
+            font-size: 40px;
+            color: #92400E;
+            font-family: 'Playfair Display', serif;
+        }
+
+        form {
+            background: white;
+            max-width: 700px;
+            margin: auto;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        form input,
+        form select,
+        form textarea {
+            width: 100%;
+            padding: 14px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 15px;
+        }
+
+        textarea {
+            resize: none;
+            height: 120px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            background: #92400E;
+            color: white;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #D97706;
+        }
+
+        footer {
+            background: #111827;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 50px;
+        }
+
+        footer p {
+            margin: 10px 0;
+        }
+
+        @media(max-width:768px) {
+
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .section-title h2 {
+                font-size: 32px;
+            }
+
+            form {
+                padding: 25px;
+            }
+
+        }
+    </style>
+
+    </head>
+
+    <body>
+
+        <header>
+
+            <div class="logo">
+                AFROSTYLE<span>SHOP</span>
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="collections.html">Collections</a></li>
+                    <li><a href="produits.html">Produits</a></li>
+                    <li><a href="about.html">À propos</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+        </header>
+
+        <section>
+
+            <div class="section-title">
+                <h2>Commande / Contact</h2>
+            </div>
+
+            <form>
+
+                <div class="form-group">
+                    <input type="text" placeholder="Nom complet" required>
+                </div>
+
+                <div class="form-group">
+                    <input type="email" placeholder="Adresse e-mail" required>
+                </div>
+
+                <div class="form-group">
+                    <input type="tel" placeholder="Numéro de téléphone" required>
+                </div>
+
+                <div class="form-group">
+                    <input type="text" placeholder="Produit souhaité" required>
+                </div>
+
+
+                </div>
+
+                <div class="form-group">
+                    <input type="text" placeholder="Couleur préférée">
+                </div>
+
+                <div class="form-group">
+                    <textarea placeholder="Votre message"></textarea>
+                </div>
+
+                <button type="submit" class="btn">
+                    Envoyer
+                </button>
+
+            </form>
+
+        </section>
+
+        <footer>
+
+            <p>
+                © 2026 AFROSTYLESHOP - Tous droits réservés.
+            </p>
+
+            <p>
+                Dakar, Sénégal | +221 78 334 35 41
+            </p>
+
+            <p>
+                Instagram • Facebook • TikTok
+            </p>
+
+        </footer>
+    </body>
+
+</html>
